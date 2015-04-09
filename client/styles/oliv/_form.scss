@@ -1,0 +1,15 @@
+.has-inner-right {
+  .form-control {
+    padding-right: 42.5px;
+  }
+}
+
+.form-inner-right {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  z-index: 2;
+  display: block;
+  line-height: 34px;
+  pointer-events: none;
+}

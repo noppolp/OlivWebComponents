@@ -1,0 +1,49 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <strong>Service</strong>
+  </div>
+  <div class="panel-body">
+
+    <section>
+      <label>confirmModal</label> - confirm modal (popup)
+      <p>
+        <div style="display:inline-block; vertical-align: top;">function - </div>
+        <div style="display:inline-block;">
+          open(title, body, result)
+          <br>return: promise
+        </div>
+        <div>
+          * if not need to override, set any param to null or leave it
+        </div>
+      </p>
+      <div class="row">
+        
+        <div class="col-xs-4">
+          <p>- default</p>
+          <div>
+            usage: <code>confirmModal.open().then -></code>
+          </div>
+          <button ng-click="vm.confirm()">Confirm Delete</button>
+        </div>
+
+        <div class="col-xs-4">
+          <p>- override title, body</p>
+          <div>
+           usage: <code>confirmModal.open('Confirm Me', 'Are you sure?').then -></code>
+          </div>
+          <button ng-click="vm.confirm('Confirm Me', 'Are you sure?')">Confirm Me</button>
+        </div>   
+
+        <div class="col-xs-4">
+          <p>- attach result object</p>
+          <div>
+            usage: <code>confirmModal.open(null, null, {id: 123}).then (result) -></code>
+          </div>
+          <button ng-click="vm.confirm(null, null, {id: 123})">Confirm Result</button>
+        </div>      
+
+      </div>
+    </section>
+  
+  </div>
+</div>

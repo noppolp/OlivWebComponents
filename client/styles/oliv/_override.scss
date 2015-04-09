@@ -1,0 +1,83 @@
+//------------------------------------------//
+// HTML
+//------------------------------------------//
+// 
+a, [ng-click] {
+  cursor: pointer;
+}
+
+
+//------------------------------------------//
+// Bootstrap
+//------------------------------------------//
+// 
+
+// disable right gutter
+// .row {
+//   margin-right: 0;
+// }
+// [class^="col-"] {
+//   padding-right: 0;
+// }
+// .input-group[class*="col-"] {
+//   padding-left: 15px;
+//   padding-right: 0;
+// }
+
+.no-left-gutter {
+  margin-left: 0;
+  [class^="col-"] {
+    padding-left:0;
+  }
+}
+.input-group[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// radio
+input[type="radio"] {
+  &.form-control {
+    width: initial;
+    height: initial;
+  }
+}
+.row.has-radio-inline {
+  margin-left: 0;
+}
+[class^="col-"] {
+  &.radio-inline{
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) { 
+  .col-sm-reset {
+    width: initial;
+  }
+}
+
+@media (min-width: 992px) { 
+  .col-md-reset {
+    width: initial;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .col-lg-reset {
+    width: initial;
+  }
+}
+
+//------------------------------------------//
+// Select2
+//------------------------------------------//
+// 
+
+.ui-select {
+  margin: 0;
+  width: 100%;
+  &:after {
+    right: 15px;
+  }
+}

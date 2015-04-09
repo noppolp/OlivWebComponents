@@ -1,0 +1,62 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <strong>Directive</strong>
+  </div>
+  <div class="panel-body">
+
+    <section>
+      <div class="form-group">
+        <label>fileModel</label> - binding ng-model to file tag
+        <div>
+          usage: <code>file-model="vm.image"</code>
+        </div>
+        <div>
+          inspect: vm.image = {{ vm.image }}
+        </div>
+        <input type="file"
+               name="image" 
+               class="form-control"
+               ng-model="vm.image"
+               file-model="vm.image"
+               ng-required="!vm.imageUrl">
+        <img ng-src="{{ vm.imageUrl }}">
+      </div>
+    </section>
+
+    <section>
+      <label>loadingTask</label> - if true, act as loading based on loadingStyle
+
+      <div class="row">
+        <div class="col-xs-6">
+          <p>- hide : (default) replace "loading" to container's content</p>
+          <div>
+            usage: 
+            <code>loading-task="vm.loading"</code>
+          </div>
+          <div>
+            inspect: vm.loading = {{ vm.loading }}
+            <button ng-click="vm.reload()">reload</button> 
+          </div>
+          <div loading-task="vm.loading">
+            Content
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <p>- disable : disable all inputs in container</p>
+          <div>
+            usage: <code>loading-task="vm.loading" loading-style="disable"</code>
+          </div>
+          <div>
+            inspect: vm.loading = {{ vm.loading }}
+            <button ng-click="vm.reload()">reload</button> 
+          </div>
+          <div loading-task="vm.loading" loading-style="disable">
+            <input type="text"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
