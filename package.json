@@ -1,6 +1,7 @@
 {
   "name": "OlivWebComponent",
   "version": "1.0.0",
+  "private": true,
   "devDependencies": {
     "grunt": "~0.4.5",
     "connect-livereload": "~0.5.2",
