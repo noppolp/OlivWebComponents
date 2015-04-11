@@ -2,6 +2,15 @@
   "name": "OlivWebComponent",
   "version": "1.0.0",
   "private": true,
+  "main": [
+    "dist/scripts/slim-vendor.js",
+    "dist/scripts/slim-core.js",
+    "dist/scripts/oliv-web-component.js",
+    "dist/styles/bootstrap.css",
+    "dist/styles/ui.css",
+    "dist/styles/slim.css",
+    "dist/styles/oliv.css"
+  ],
   "dependencies": {
     "jquery": "~2.1.1",
     "angular": "~1.2.28",

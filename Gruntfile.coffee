@@ -210,8 +210,8 @@ module.exports = (grunt) ->
 
         useminPrepare:
             html: [
+                "<%= yeoman.app %>/index.html"
                 "<%= yeoman.app %>/slim.html"
-                "<%= yeoman.app %>/demo.html"
             ]
             options:
                 dest: "<%= yeoman.dist %>"
