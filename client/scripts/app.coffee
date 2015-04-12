@@ -12,15 +12,16 @@ angular.module('olivWebComponent', [
     'oliv.services'
     'oliv.models'
     'oliv.directives'
+    'oliv.templates'
 ])
 
 .config([
     '$routeProvider'
     ($routeProvider) ->
         $routeProvider
-            .when('/404', { templateUrl: 'scripts/slim/views/pages/404.html'} )
-            .when('/500', { templateUrl: 'scripts/slim/views/pages/500.html'} )
-            .otherwise( redirectTo: '/404' )
+            .when('/pages/404', { templateUrl: '404.html'} )
+            .when('/pages/500', { templateUrl: '500.html'} )
+            .otherwise( redirectTo: '/pages/404' )
 ])
 .config([
     'paginationConfig'
