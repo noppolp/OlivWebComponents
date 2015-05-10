@@ -30,7 +30,7 @@ angular.module('slim.directives', [])
                     # add certain class based on path
                     switch path
                         when '/404', '/pages/404', '/pages/500' then $element.addClass('body-wide body-err')
-                        when '/pages/signin', '/pages/signup', '/pages/forgot-password' then $element.addClass('body-wide body-auth')
+                        when '/signin', '/pages/signin', '/pages/signup', '/pages/forgot-password' then $element.addClass('body-wide body-auth')
                         when '/pages/lock-screen' then $element.addClass('body-wide body-lock')
 
                 addBg( $location.path() )
