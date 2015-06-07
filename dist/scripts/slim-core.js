@@ -34,6 +34,8 @@
               case '/pages/404':
               case '/pages/500':
                 return $element.addClass('body-wide body-err');
+              case '/signin':
+              case '/video-embed':
               case '/pages/signin':
               case '/pages/signup':
               case '/pages/forgot-password':
