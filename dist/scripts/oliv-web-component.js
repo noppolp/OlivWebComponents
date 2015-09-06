@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('olivWebComponent', ['slim', 'ui.bootstrap.showErrors', 'oliv.services', 'oliv.models', 'oliv.directives', 'oliv.templates']).config([
+  angular.module('olivWebComponent', ['slim', 'ui.bootstrap.showErrors', 'angularMoment', 'oliv.services', 'oliv.models', 'oliv.directives', 'oliv.templates']).config([
     '$routeProvider', function($routeProvider) {
       return $routeProvider.when('/pages/404', {
         templateUrl: '404.html'

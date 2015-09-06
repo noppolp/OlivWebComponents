@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 angular.module('olivWebComponent', [
 
@@ -7,6 +7,7 @@ angular.module('olivWebComponent', [
 
     # Bower Component
     'ui.bootstrap.showErrors'
+    'angularMoment'
 
     # Oliv
     'oliv.services'
