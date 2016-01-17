@@ -12,7 +12,7 @@ angular.module('demo', [
     ($routeProvider) ->
 
         $routeProvider
-            .when('/', { 
+            .when('/', {
                 redirectTo: '/dashboard'
             })
 ])
@@ -25,13 +25,13 @@ angular.module('demo', [
         $scope.pageTransitionOpts = [
             name: 'Fade up'
             class: 'animate-fade-up'
-        ,   
+        ,
             name: 'Scale up'
             class: 'ainmate-scale-up'
-        ,   
+        ,
             name: 'Slide in from right'
             class: 'ainmate-slide-in-right'
-        ,   
+        ,
             name: 'Flip Y'
             class: 'animate-flip-y'
         ]
