@@ -17,7 +17,7 @@
     "angular-resource": "~1.2.29",
     "angular-cookies": "~1.2.29",
     "angular-sanitize": "~1.2.29",
-    "angular-route": "~1.2.29",
+    "angular-route": "~1.4.0",
     "angular-animate": "~1.4.0",
     "angular-touch": "~1.2.29",
     "font-awesome": "~4.3.0",
